@@ -1,0 +1,9 @@
+develop-eggs
+eggs
+parts
+bin
+online_games.egg-info
+.installed.cfg
+.coverage
+.installed.cfg
+*.pyc
