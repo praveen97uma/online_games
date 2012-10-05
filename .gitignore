@@ -7,3 +7,4 @@ online_games.egg-info
 .coverage
 .installed.cfg
 *.pyc
+*.*~
