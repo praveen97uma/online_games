@@ -5,5 +5,18 @@ api_version: 1
 threadsafe: true
 
 handlers:
+
+- url: /css
+  static_dir: static/css
+
 - url: /.*
-  script: index.app
+  script: main.myapp
+
+libraries:
+- name: jinja2
+  version: latest
+- name: markupsafe                                                              
+  version: latest 
+
+builtins:
+- remote_api: on

@@ -16,7 +16,7 @@ class BaseRequestHandler(webapp2.RequestHandler):
 	
 	def render(self):
 		template = self.getTemplate()
-		context = self.getContext(template_args);		
+		context = self.getContext();		
 		self.response.out.write(template.render(context))
 	
 	def getContext(self, **kwargs):
