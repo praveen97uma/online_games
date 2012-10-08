@@ -1,0 +1,56 @@
+<html>
+
+<head>
+{% block css %}
+<link href="/css/base/base.css" rel=stylesheet type "text/css"/>
+{% endblock css %}
+</head>	
+
+<title>
+	{{ page_name }}
+</title>
+<body>
+<div class="container">
+	<div class="header">
+		{% block header %}
+			<div class="header_right">
+					{% block header_right %}
+					{% endblock header_right %}				
+			</div>
+		
+		{% endblock header %}
+	</div>
+	
+	<div class="navigation">
+		{% block navigation %}
+		{% endblock navigation %}
+	</div>
+
+	<div class="middlepanel">
+		<div class="leftpanel">
+			{% block leftpanel %}
+			{% endblock leftpanel %}		
+		</div>
+	
+		<div class="content">
+			{% block main_content %}
+			{% endblock main_content %}		
+		</div>
+
+		<div class="rightpanel">	
+			{% block rightpanel %}
+			{% endblock rightpanel %}		
+		</div>
+	</div>
+	
+	<div class="footer">
+		{% block footer %}
+		{% endblock footer %}	
+	</div>	 
+</div>
+</body>
+
+{% block scripts %}
+{% endblock scripts %}
+
+</html>
